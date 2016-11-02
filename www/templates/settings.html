@@ -1,0 +1,12 @@
+<ion-view view-title="{{ 'TITLE.SETTINGS' | translate }}">
+    <ion-content>
+        <div class="list card">
+            <label class="item">{{ 'SETTINGS.Language' | translate }}
+            <ion-list>
+                <ion-radio ng-model="storage.translations" ng-value="'en'" ng-click="changeLanguage('en')">{{ 'EN' | translate }}</ion-radio>
+                <ion-radio ng-model="storage.translations" ng-value="'th'" ng-click="changeLanguage('th')">{{ 'TH' | translate }}</ion-radio>
+            </ion-list>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>
